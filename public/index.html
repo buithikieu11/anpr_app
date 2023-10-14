@@ -28,25 +28,8 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script type="text/javascript" src="jsmpeg.min.js"></script>
     <div id="root">
         <div id="header"></div>
-        <div id="sub" style="display: flex;align-items: center;">
-          <div id="video1">
-            <canvas id="chanel1" style="width:602px;height: 360px;margin-left: 209px;"></canvas>
-          </div>
-          <div id="video2">
-            <canvas id="chanel2"></canvas>
-          </div>
-          <div id="vehicle_capture">
-          </div>
-        </div>
-        <script type="text/javascript">
-            var canvas1 = document.getElementById('chanel1');
-            var canvas2 = document.getElementById('chanel2');
-            var websocket = new WebSocket("ws://127.0.0.1:9999");
-            var player1 = new jsmpeg(websocket, {canvas:canvas1, autoplay:true, loop:true,videoBufferSize:128})
-       </script>
         <div id="app"></div>
     </div>
   </body>
